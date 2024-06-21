@@ -10,7 +10,7 @@ const campaignSchema = new mongoose.Schema({
   creators: [
     {
       creator: { type: Schema.Types.ObjectId, ref: "creator", required: true },
-      creatorLevel: { type: String, required: true },
+      // creatorLevel: { type: String, required: true },
       price: { type: Number, required: true },
       date: { type: Date, default: Date.now },
     },

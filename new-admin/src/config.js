@@ -26,7 +26,7 @@ export const gtmConfig = {
 };
 
 // export const API_SERVICE = "http://localhost:5000/api/v1/main";
-
+export const API_SERVICE = "http://54.168.106.12:5000/api/v1/main";
 // export const API_SERVICE = "https://cybrclik.herokuapp.com/api/v1/main";
 
-export const API_SERVICE = "https://devcybrclik.herokuapp.com/api/v1/main";
+// export const API_SERVICE = "https://devcybrclik.herokuapp.com/api/v1/main";

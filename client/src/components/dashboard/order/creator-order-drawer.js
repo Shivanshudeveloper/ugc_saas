@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 import PropTypes from "prop-types";
+import toast from "react-hot-toast";
 import { format } from "date-fns";
 import numeral from "numeral";
 import {
@@ -342,7 +343,7 @@ const OrderPreview = (props) => {
           align="center"
           onClick={() => uploadFile(cover)}
         >
-          Save
+          Submit
         </Button>
       </Box>
 
@@ -383,7 +384,7 @@ const OrderPreview = (props) => {
           align="center"
           onClick={() => uploadExtraFile(extraCover)}
         >
-          Save Extra
+          Submit Extra Content
         </Button>
       </Box>
 

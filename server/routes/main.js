@@ -225,15 +225,16 @@ router.get("/get_specific_order/:orderId", async (req, res) => {
 router.patch("/edit_order/:orderId", async (req, res) => {
   res.setHeader("Content-Type", "application/json");
   // console.log(req.body);
-  // console.log(req.body);
+  console.log("request ====>>>", req.body.status);
   try {
     const order = await Order.findOne({ _id: req.params.orderId });
     const creator = await User.findOne({ userId: order.creatoruser });
-    console.log(creator);
     if (!creator) {
       return res.status(404).json("User not Found");
     }
-    creator.funds.amount += parseInt(order.price);
+    if (req.body.status === 1) {
+      creator.funds.amount += parseInt(order.price);
+    }
     console.log(typeof creator.funds.amount);
     await creator.save();
     Order.updateOne(

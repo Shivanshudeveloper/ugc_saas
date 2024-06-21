@@ -172,7 +172,7 @@ const ViewBrands = () => {
             }}
           >
             <Avatar
-              src={profile.avatar}
+              src={user?.creator?.profile}
               sx={{
                 height: 64,
                 width: 64

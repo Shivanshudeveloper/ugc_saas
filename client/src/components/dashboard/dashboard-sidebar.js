@@ -69,7 +69,7 @@ export const DashboardSidebar = (props) => {
           icon: <UsersIcon fontSize="small" />,
         },
         {
-          title: t("Orders"),
+          title: t("Jobs"),
           path: "/dashboard/orders",
           icon: <ChartBarIcon fontSize="small" />,
         },
@@ -163,7 +163,7 @@ export const DashboardSidebar = (props) => {
             //   icon: <HomeIcon fontSize="small" />,
             // },
             {
-              title: t("Creators Onboarding"),
+              title: t("Onboarding"),
               path: "/dashboard/onboarding",
               icon: <UserCircleIcon fontSize="small" />,
             },

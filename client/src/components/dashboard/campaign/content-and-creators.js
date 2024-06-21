@@ -25,7 +25,6 @@ import VideocamIcon from "@mui/icons-material/Videocam";
 import PricingCard from "./cards/pricing-card";
 import VideoTimeCard from "./cards/video-time-card";
 import AccessTime from "@mui/icons-material/AccessTime";
-import MoreTime from "@mui/icons-material/moreTime";
 import AspectRatio from "@mui/joy/AspectRatio";
 import Sheet from "@mui/joy/Sheet";
 import CreatorLevelCard from "./cards/creator-level-card";

@@ -284,7 +284,7 @@ const CustomerList = () => {
                 </Box> */}
               </Box>
               <Card>
-                <Tabs
+                {/* <Tabs
                   indicatorColor="primary"
                   onChange={handleTabsChange}
                   scrollButtons="auto"
@@ -296,7 +296,7 @@ const CustomerList = () => {
                   {tabs.map((tab) => (
                     <Tab key={tab.value} label={tab.label} value={tab.value} />
                   ))}
-                </Tabs>
+                </Tabs> */}
                 <Divider />
                 <Box
                   sx={{

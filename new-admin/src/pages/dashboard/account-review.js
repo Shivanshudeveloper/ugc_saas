@@ -55,7 +55,6 @@ import ImageIcon from "@mui/icons-material/Image";
 import RectangleIcon from "@mui/icons-material/RectangleOutlined";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import AccessTime from "@mui/icons-material/AccessTime";
-import MoreTime from "@mui/icons-material/moreTime";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -218,7 +217,7 @@ const AccountReview = () => {
   };
 
   const editUserStatus = async (user) => {
-    debugger;
+    // debugger;
     try {
       const response = await fetch(`${API_SERVICE}/edit_user/${user?.userId}`, {
         method: "PATCH",
@@ -291,6 +290,7 @@ const AccountReview = () => {
   }, []);
 
   function search(items) {
+    console.log(items)
     return items?.filter((item) => {
       return searchParam.some((newItem) => {
         // console.log(item);
@@ -358,7 +358,7 @@ const AccountReview = () => {
                       <TableCell align="center">Contact</TableCell>
                       <TableCell align="center">Email</TableCell>
                       <TableCell align="center">Type</TableCell>
-                      <TableCell align="center">Active account</TableCell>
+                      <TableCell align="center">Deactivate account</TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -381,7 +381,7 @@ const AccountReview = () => {
                                 editUserStatus(user)
                               }}
                             >
-                              Active
+                              Deactivate
                             </Button>
                           </Box>
                         </TableCell>

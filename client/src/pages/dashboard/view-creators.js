@@ -48,7 +48,6 @@ import ImageIcon from "@mui/icons-material/Image";
 import RectangleIcon from "@mui/icons-material/RectangleOutlined";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import AccessTime from "@mui/icons-material/AccessTime";
-import MoreTime from "@mui/icons-material/moreTime";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -582,11 +581,9 @@ const Creators = () => {
                             fullWidth
                             variant="contained"
                             onClick={() => {
-                              console.log(user);
-                              console.log(creator?.price);
-
-                              setSelectedCreator(creator);
-                              setSuccessOpen(true);
+                              router.push(`/dashboard/portfolio?id=${creator?.userId}`)
+                              // setSelectedCreator(creator);
+                              // setSuccessOpen(true);
                             }}
                           >
                             View More

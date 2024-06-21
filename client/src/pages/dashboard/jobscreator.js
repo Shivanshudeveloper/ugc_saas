@@ -178,7 +178,7 @@ const Finance = () => {
         body: JSON.stringify({
           campaign: selectedCampaign._id,
           creator: user?.creator?._id,
-          creatorLevel,
+          // creatorLevel,
           price,
         }),
       });
@@ -595,7 +595,7 @@ const Finance = () => {
                         Enter Bid Details
                       </Typography>
                     </Grid>
-                    <Grid item xs={12}>
+                    {/* <Grid item xs={12}>
                       <FormControl fullWidth>
                         <InputLabel id="demo-simple-select-label">
                           Creator Level
@@ -616,7 +616,7 @@ const Finance = () => {
                           <MenuItem value="level4">Pro Level</MenuItem>
                         </Select>
                       </FormControl>
-                    </Grid>
+                    </Grid> */}
 
                     <Grid item xs={12}>
                       <TextField

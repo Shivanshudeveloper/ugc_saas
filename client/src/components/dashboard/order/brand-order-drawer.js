@@ -296,35 +296,38 @@ const OrderPreview = (props) => {
             Ask For Review
           </Button>
         </Box>
-      )}
+      )
+      }
 
       <Typography variant="h5" sx={{ mb: 4 }}>
         Extra Content
       </Typography>
 
 
-      {order?.campaign?.content?.contentType === 0 ? (
-        <center>
-          <div className="App" ref={imgContainerRef}>
-            <div className="watermarked" data-watermark="Cyber Click">
-              <img
-                style={{ width: "320px", marginTop: "5px" }}
-                src={order?.demoExtraImage}
-                alt="Image"
-              />
+      {
+        order?.campaign?.content?.contentType === 0 ? (
+          <center>
+            <div className="App" ref={imgContainerRef}>
+              <div className="watermarked" data-watermark="Cyber Click">
+                <img
+                  style={{ width: "320px", marginTop: "5px" }}
+                  src={order?.demoExtraImage}
+                  alt="Image"
+                />
+              </div>
             </div>
-          </div>
-        </center>
-      ) : (
-        <center>
-          <video
-            style={{ width: "320px", height: "180px", marginTop: "5px" }}
-            src={order?.demoExtraVideo}
-            alt="Video"
-            controls
-          />
-        </center>
-      )}
+          </center>
+        ) : (
+          <center>
+            <video
+              style={{ width: "320px", height: "180px", marginTop: "5px" }}
+              src={order?.demoExtraVideo}
+              alt="Video"
+              controls
+            />
+          </center>
+        )
+      }
 
       {/* download button for extra content upload by creator */}
       {/* <Box 
